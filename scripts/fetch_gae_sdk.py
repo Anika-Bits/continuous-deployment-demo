@@ -23,10 +23,10 @@ Current releases are listed here:
 
 import json
 import os
-import io
-import sys
-import urllib2
-import zipfile
+# import io
+# import sys
+# import urllib2
+# import zipfile
 
 # _SDK_URL = (
 #     'https://www.googleapis.com/storage/v1/b/appengine-sdks/o?prefix=featured')
@@ -93,5 +93,5 @@ import zipfile
 #         print('Error extracting SDK contents')
 #         return 1
 print('Error extracting SDK contents')
-if __name__ == '__main__':
-    sys.exit(main(sys.argv[:]))
+# if __name__ == '__main__':
+#     sys.exit(main(sys.argv[:]))
