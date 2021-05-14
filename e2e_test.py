@@ -7,14 +7,13 @@
 # or implied. See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-import urllib2
+from urllib.request import urlopen
 import logging
 
 HOST='http://stm-assignment.appspot.com'
 
 # [START e2e]
-response = urllib2.urlopen("{}/get_author/ulysses".format(HOST))
+response = urlopen("{}/get_author/ulysses".format(HOST))
 html = response.read()
 assert(html == "James Joyce")
 # [END e2e]
