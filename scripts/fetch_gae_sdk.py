@@ -94,4 +94,5 @@ import os
 #         return 1
 print('Error extracting SDK contents')
 # if __name__ == '__main__':
-#     sys.exit(main(sys.argv[:]))
+#     sys.exit(main(sys.argv[:])
+# hwlllieorui)
