@@ -31,7 +31,7 @@ install:
 - gcloud config set project stm-assignment
 # Install the Python dependencies
 - pip install -r requirements.txt -t lib/
-- pip install -U Flask
+- pip install flask -t lib/
 - pip3 install requests 
 script:
 # Run the unit tests
