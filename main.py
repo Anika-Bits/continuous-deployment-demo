@@ -17,7 +17,7 @@ app = Flask(__name__)
 from api_key import key
 
 # [START app]
-@app.route('/')
+@app.route('/', methods=['GET'])
 def get_author():
     # host = 'https://www.googleapis.com/books/v1/volumes?q={}&key={}&country=US'.format(title, key)
     # request = urllib2.Request(host)
@@ -30,7 +30,7 @@ def get_author():
     # html = response.read()
     # author = json.loads(html)['items'][0]['volumeInfo']['authors'][0]
     # return author
-    print("Hello")
+    <p>A prototype API for distant reading of science fiction novels.</p>
 # [END app]
 
 if __name__ == '__main__':
