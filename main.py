@@ -8,7 +8,7 @@
 # limitations under the License.
 
 
-import urllib2
+from urllib.request import urlopen
 import json
 from google.appengine.ext import vendor
 vendor.add('lib')
@@ -24,7 +24,7 @@ def get_author(title):
     host = 'https://www.googleapis.com/books/v1/volumes?q={}&key={}&country=US'.format(title, key)
     request = urllib2.Request(host)
     try:
-        response = urllib2.urlopen(request)
+        response = urlopen(request)
     except urllib2.HTTPError, error:
         contents = error.read()
         print ('Received error from Books API {}'.format(contents))
