@@ -8,9 +8,6 @@
 # limitations under the License.
 
 
-from urllib.request import urlopen
-import json
-
 from flask import Flask
 app = Flask(__name__)
 
