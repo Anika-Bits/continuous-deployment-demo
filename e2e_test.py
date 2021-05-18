@@ -13,9 +13,9 @@ import logging
 HOST='http://stm-assignment.appspot.com'
 
 # [START e2e]
-response = urlopen("{}/get_author/ulysses".format(HOST))
-html = response.read()
-assert(html == "James Joyce")
-# [END e2e]
+# response = urlopen("{}/get_author/ulysses".format(HOST))
+# html = response.read()
+# assert(html == "James Joyce")
+# # [END e2e]
 
 

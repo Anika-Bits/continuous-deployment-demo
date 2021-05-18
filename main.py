@@ -21,17 +21,18 @@ from api_key import key
 # [START app]
 @app.route('/get_author/<title>')
 def get_author(title):
-    host = 'https://www.googleapis.com/books/v1/volumes?q={}&key={}&country=US'.format(title, key)
-    request = urllib2.Request(host)
-    try:
-        response = urlopen(request)
-    except urllib2.HTTPError, error:
-        contents = error.read()
-        print ('Received error from Books API {}'.format(contents))
-        return str(contents)
-    html = response.read()
-    author = json.loads(html)['items'][0]['volumeInfo']['authors'][0]
-    return author
+    # host = 'https://www.googleapis.com/books/v1/volumes?q={}&key={}&country=US'.format(title, key)
+    # request = urllib2.Request(host)
+    # try:
+    #     response = urlopen(request)
+    # except urllib2.HTTPError, error:
+    #     contents = error.read()
+    #     print ('Received error from Books API {}'.format(contents))
+    #     return str(contents)
+    # html = response.read()
+    # author = json.loads(html)['items'][0]['volumeInfo']['authors'][0]
+    # return author
+    print("Hello")
 # [END app]
 
 if __name__ == '__main__':
