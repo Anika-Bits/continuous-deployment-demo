@@ -54,7 +54,7 @@ before_install:
 
 install:
   - pip install -r requirements.txt
-  - pip install -r requirements-for-testing.txt
+#  - pip install -r requirements-for-testing.txt
 
 script:
   - pytest && pytest test_e2e/run.py
