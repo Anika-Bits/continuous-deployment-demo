@@ -1,7 +1,7 @@
 # Use Dockerized infrastructure
 sudo: false
 language: python
-python: "3.7"
+python: "3.6"
 # Cache our Gcloud SDK between commands
 cache:
   directories:
@@ -31,7 +31,7 @@ install:
 - gcloud config set project stm-assignment
 # Install the Python dependencies
 - pip install -r requirements.txt -t lib/
-- pip install flask -t lib/
+- pip install -U Flask
 - pip3 install requests 
 script:
 # Run the unit tests
