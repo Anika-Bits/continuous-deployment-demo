@@ -1,7 +1,6 @@
 # Use Dockerized infrastructure
 sudo: false
 language: python
-python: "3.7"
 # Cache our Gcloud SDK between commands
 cache:
   directories:
@@ -30,15 +29,15 @@ install:
 # Set the correct project to deploy to
 - gcloud config set project stm-assignment
 # Install the Python dependencies
-- pip3 install -r requirements.txt -t lib/
-- pip3 install flask -t lib/
+- pip install -r requirements.txt -t lib/
+- pip install -U Flask
 - pip3 install requests 
 script:
 # Run the unit tests
 - python test_main.py
 # [START deploy]
 # Deploy the app
-- gcloud -q app deploy app.yaml --promote
+- gcloud -q app deploy app.yaml --promote --no-cache
 # Run and end to end test
 - python e2e_test.py
 # [END deploy]
