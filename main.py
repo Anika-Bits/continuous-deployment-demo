@@ -30,7 +30,7 @@ def get_author():
     # html = response.read()
     # author = json.loads(html)['items'][0]['volumeInfo']['authors'][0]
     # return author
-    <p>A prototype API for distant reading of science fiction novels.</p>
+    return "Hey! The service is up, how about doing something useful"
 # [END app]
 
 if __name__ == '__main__':
