@@ -25,7 +25,7 @@ class MainTest(unittest.TestCase):
 #        rv = self.app.get('/get_author/ulysses')
 #        assert rv.data == 'James Joyce'
 
-if __name__ == '__main__':
-   unittest.main()
+    if __name__ == '__main__':
+        unittest.main()
 
 
