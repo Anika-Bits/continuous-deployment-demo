@@ -25,7 +25,6 @@ import json
 import os
 import io
 import sys
-from urllib.request import urlopen
 import zipfile
 
 _SDK_URL = (
