@@ -11,10 +11,14 @@
 from urllib.request import urlopen
 import json
 
+from flask import Flask
+app = Flask(__name__)
+
+from api_key import key
 
 # [START app]
-@app.route('/get_author/<title>')
-def get_author(title):
+@app.route('/')
+def get_author():
     # host = 'https://www.googleapis.com/books/v1/volumes?q={}&key={}&country=US'.format(title, key)
     # request = urllib2.Request(host)
     # try:
