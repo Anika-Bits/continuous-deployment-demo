@@ -10,13 +10,7 @@
 
 from urllib.request import urlopen
 import json
-from google.appengine.ext import vendor
-vendor.add('lib')
 
-from flask import Flask
-app = Flask(__name__)
-
-from api_key import key
 
 # [START app]
 @app.route('/get_author/<title>')
