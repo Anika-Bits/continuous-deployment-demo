@@ -26,7 +26,7 @@ def get_author():
     # html = response.read()
     # author = json.loads(html)['items'][0]['volumeInfo']['authors'][0]
     # return author
-    return "Hey! The service is up, how about doing something useful"
+    return "Hey! The service is up, how about doing something useful :)"
 # [END app]
 
 if __name__ == '__main__':
