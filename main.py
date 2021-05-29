@@ -15,7 +15,7 @@ app = Flask(__name__)
 # [START app]
 @app.route('/', methods=['GET'])
 def get_author():
-    return "Hey! The service is up, how about doing something useful :)"
+    return "Hey! The service is up, how about doing something useful :) Demo123"
 # [END app]
 
 if __name__ == '__main__':
